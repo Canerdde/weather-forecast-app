@@ -1,76 +1,99 @@
-# Hava Durumu Uygulaması
+Weather Forecast App
 
-Modern ve kullanıcı dostu bir hava durumu uygulaması. Next.js 14, TypeScript ve Tailwind CSS kullanılarak geliştirilmiştir.
+A modern and user-friendly weather forecast application built with Next.js 14, TypeScript, and Tailwind CSS.
 
-## Özellikler
+The application allows users to view real-time weather information and 5-day forecasts based on the city they search for.
+This project was created to practice API integration and modern frontend development.
 
-- 🌡️ **Anlık Hava Durumu**: Girdiğiniz şehir için gerçek zamanlı hava durumu bilgileri
-- 📅 **5 Günlük Tahmin**: Detaylı 5 günlük hava durumu tahminleri
-- 🎨 **Modern Tasarım**: Minimal ve mobil uyumlu arayüz
-- 🌈 **Dinamik İkonlar**: Hava durumuna göre değişen görsel gösterimler
-- ⚡ **Hızlı ve Performanslı**: Next.js ile optimize edilmiş performans
+🚀 Features
 
-## Teknolojiler
+🌡️ Real-Time Weather – Current temperature and weather conditions
 
-- **Next.js 14** - React framework
-- **TypeScript** - Tip güvenliği
-- **Tailwind CSS** - Modern CSS framework
-- **OpenWeatherMap API** - Hava durumu verileri
+📅 5-Day Forecast – Detailed daily weather predictions
 
-## Kurulum
+🎨 Modern UI – Clean and responsive design
 
-1. Bağımlılıkları yükleyin:
-```bash
+🌈 Dynamic Icons – Icons change according to weather conditions
+
+⚡ High Performance – Optimized with Next.js
+
+🛠️ Technologies Used
+
+Next.js 14 – React framework
+
+TypeScript – Type safety and better development experience
+
+Tailwind CSS – Utility-first CSS framework
+
+OpenWeatherMap API – Weather data provider
+
+📦 Installation
+1️⃣ Install dependencies
 npm install
-```
 
-2. Geliştirme sunucusunu başlatın:
-```bash
+2️⃣ Start development server
 npm run dev
-```
 
-3. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın
+3️⃣ Open in browser
+http://localhost:3000
 
-## API Key Kurulumu
+🔑 API Key Setup
 
-Uygulama OpenWeatherMap API kullanmaktadır. API key'i `.env.local` dosyasında tanımlamanız gerekir:
+This project uses the OpenWeatherMap API.
 
-1. Proje kök dizininde `.env.local` dosyası oluşturun
-2. Aşağıdaki satırı ekleyin (kendi API key'inizi kullanın):
+Steps:
 
-```env
+Create a .env.local file in the root directory
+
+Add the following line:
+
 OPENWEATHER_API_KEY=your_api_key_here
-```
 
-API key'i [OpenWeatherMap](https://home.openweathermap.org/api_keys) adresinden alabilirsiniz.
 
-## Kullanım
+Get your API key from:
+👉 https://home.openweathermap.org/api_keys
 
-1. Ana sayfada şehir adını girin
-2. "Ara" butonuna tıklayın
-3. Anlık hava durumu ve 5 günlük tahmin bilgilerini görüntüleyin
+⚠️ Do not push the .env.local file to GitHub.
 
-## Proje Yapısı
+🧭 Usage
 
-```
+Enter a city name
+
+Click the Search button
+
+View current weather and 5-day forecast
+
+📁 Project Structure
 ├── app/
 │   ├── api/
 │   │   └── weather/
-│   │       └── route.ts      # API endpoint
+│   │       └── route.ts
 │   ├── components/
-│   │   ├── WeatherCard.tsx   # Anlık hava durumu kartı
-│   │   └── ForecastCard.tsx  # 5 günlük tahmin kartı
+│   │   ├── WeatherCard.tsx
+│   │   └── ForecastCard.tsx
 │   ├── types/
-│   │   └── weather.ts        # TypeScript tipleri
-│   ├── globals.css           # Global stiller
-│   ├── layout.tsx            # Root layout
-│   └── page.tsx              # Ana sayfa
+│   │   └── weather.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 ├── package.json
 ├── tailwind.config.js
 └── tsconfig.json
-```
 
-## Lisans
+🎯 Project Purpose
 
-Bu proje eğitim ve portföy amaçlı geliştirilmiştir.
+This project was developed to:
 
+Practice API integration
+
+Improve frontend development skills
+
+Work with TypeScript and Next.js
+
+Build a clean and responsive UI
+
+Create a portfolio-ready project
+
+📄 License
+
+This project is developed for educational and portfolio purposes only.
